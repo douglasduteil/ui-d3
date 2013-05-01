@@ -23,7 +23,7 @@ describe('uiD3', function () {
     uiConfig = {};
 	});
 
-	describe('behavior', function () {
+	describe('', function () {
 
 		it('should not throw an error when window.d3 is defined', function () {
 			function compile() {
@@ -32,16 +32,9 @@ describe('uiD3', function () {
 			expect(compile).not.toThrow();
 		});
 		
-		it('should be contain a svg', function () {
+		it('should contain a svg', function () {
 			var element = $compile('<div ui-d3-chart-bar>')(scope);
 			expect(element.children()[0].tagName).toBe('svg');
-		});
-
-		
-		it('should watch the uiD3 attributes', function () {
-			spyOn(scope, '$watch');
-			$compile('<div ui-d3-chart-bar ng-model="foo">')(scope);
-			expect(scope.$watch).toHaveBeenCalled();
 		});
 		
 	});
