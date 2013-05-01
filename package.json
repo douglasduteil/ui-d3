@@ -1,0 +1,19 @@
+{
+  "name": "angular-ui-d3",
+  "version": "0.0.1",
+  "description": "This directive allows you to add simple d3 elements.",
+  "author": "https://github.com/douglasduteil/ui-d3/contributors",
+  "license": "MIT",
+  "main": "./ui-d3.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-karma": "~0.4.x",
+    "grunt-contrib-jshint": "~0.2.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/douglasduteil/ui-d3.git"
+  }
+}

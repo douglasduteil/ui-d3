@@ -1,0 +1,45 @@
+<section id="directives-ui-d3" ng-non-bindable ng-controller="DocCtrl">
+    <div class="page-header">
+        <h1>D3</h1>
+    </div>
+
+    <div class="row">
+        <div class="span6">
+
+            <h3>What?</h3>
+            <p>
+                Here is a data visualization made with <a href="http://d3js.org/"><abbr title="Data-Driven Documents">D3</abbr></a>.<br/>
+                You can play with it !
+            </p>
+            <p>
+                <button class="btn btn-primary" ng-click="add()">Add</button>
+                <button class="btn btn-danger" ng-click="remove()">Remove</button>
+            </p>
+
+            <div ui-d3-chart-bar="{ height : 300, animDelay : 500}" ng-model="d3Model" ></div>
+            <div ui-d3-chart-bar="{ height : 300, animDelay : 500, orientation : 'horizontal'}" ng-model="d3Model" ></div>
+
+        </div>
+        <div class="span6">
+
+            <h3>How?</h3>
+            <p>
+                Just by calling it <br/>
+                <a href="http://briantford.com/blog/angular-d3.html">More</a></p>
+            <pre class="prettyprint">
+            &lt;div ui-d3-bar=&quot;{
+                height : 300,
+                animDelay : 500
+                }&quot; ng-model=&quot;d3Model&quot; &gt;&lt;/div&gt;
+            &lt;div ui-d3-bar=&quot;{
+                height : 300,
+                animDelay : 500,
+                orientation : 'horizontal'
+                }&quot; ng-model=&quot;d3Model&quot; &gt;&lt;/div&gt;
+            </pre>
+            <p>Here is the <code>d3Model</code> value : </p>
+            <pre>{{d3Model | json}}</pre>
+        </div>
+    </div>
+
+</section>
